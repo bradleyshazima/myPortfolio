@@ -6,31 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bradley Shazima - Web Developer</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/glide.core.css">
+    <link rel="stylesheet" href="/styles/glide.theme.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
         <ul class="navlinks">
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Projects</li>
-            <li><a href="#"></a>Contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="hero">
         <div class="content">
             <h3>Hi! I'm Bradley</h3>
-            <h1>Full Stack Web Developer</h1>
+            <h1 id="hero-text">
+                <span id="typed-text"></span>
+                <span class="cursor" id="cursor"></span>
+            </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis enim id voluptatem tempora nobis, corporis error sint. Veniam laudantium, error repudiandae itaque ea quibusdam eligendi facere praesentium nobis repellendus. Sapiente ipsum distinctio asperiores ex labore quod dicta rem reiciendis impedit, placeat minus dolore animi cum esse inventore neque repellendus.</p>
-            <a href="#">About Me</a>
+            <button>About Me</button>
         </div>
         <div class="myAvatar">
             <img src="/images/myAvatar.png" alt="My Avatar Image">
         </div>
     </section>
+
+    <section id="about">
+        <div class="bef-el"></div>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <div class="glide__slides">
+                <div class="glide__slide service">
+                    <div class="blurBg"></div>
+                    <div class="icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores quas voluptatibus ipsa unde. Esse, laudantium?</p>
+                    <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="glide__slide service">
+                    <div class="blurBg"></div>
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores quas voluptatibus ipsa unde. Esse, laudantium?</p>
+                    <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="glide__slide service">
+                    <div class="blurBg"></div>
+                    <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h2>Logo Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores quas voluptatibus ipsa unde. Esse, laudantium?</p>
+                    <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="/scripts/glider.js"></script>
+    <script src="/scripts/typewriter.js"></script>
 </body>
 </html>
