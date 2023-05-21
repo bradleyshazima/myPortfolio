@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bradley Shazima - Web Developer</title>
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/glide.core.css">
     <link rel="stylesheet" href="/styles/glide.theme.css">
@@ -25,6 +26,14 @@
         </ul>
     </nav>
 
+    <div class="socialLinks">
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+        </ul>
+    </div>
+
     <section id="hero">
         <div class="content">
             <h3>Hi! I'm Bradley</h3>
@@ -32,8 +41,8 @@
                 <span id="typed-text"></span>
                 <span class="cursor" id="cursor"></span>
             </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis enim id voluptatem tempora nobis, corporis error sint. Veniam laudantium, error repudiandae itaque ea quibusdam eligendi facere praesentium nobis repellendus. Sapiente ipsum distinctio asperiores ex labore quod dicta rem reiciendis impedit, placeat minus dolore animi cum esse inventore neque repellendus.</p>
-            <button>About Me</button>
+            <p>As a passionate and skilled web designer, I have honed my abilities in various aspects of the field. With expertise in full stack development, self-taught graphic design, and certification in UI/UX, I am dedicated to creating visually appealing and user-friendly websites. My portfolio showcases the culmination of my hard work, creativity, and commitment to delivering exceptional design solutions that leave a lasting impact. Let's collaborate and bring your digital vision to life!</p>
+            <button id="hero-btn">Let's Talk</button>
         </div>
         <div class="myAvatar">
             <img src="/images/myAvatar.png" alt="My Avatar Image">
@@ -42,6 +51,8 @@
 
     <section id="about">
         <div class="bef-el"></div>
+        <h1>What I can do!</h1>
+        <p>Here are the services I offer</p>
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
               <div class="glide__slides">
@@ -49,7 +60,7 @@
                     <div class="blurBg"></div>
                     <div class="icon"><i class="fa-solid fa-pen-ruler"></i></div>
                     <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores quas voluptatibus ipsa unde. Esse, laudantium?</p>
+                    <p>Crafting exceptional user interfaces and seamless experiences that captivate users, blending aesthetics with usability for optimal engagement and satisfaction.</p>
                     <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
@@ -57,7 +68,7 @@
                     <div class="blurBg"></div>
                     <div class="icon"><i class="fa-solid fa-code"></i></div>
                     <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores quas voluptatibus ipsa unde. Esse, laudantium?</p>
+                    <p>Designing captivating and functional websites tailored to your specific needs, delivering engaging user experiences and visually appealing interfaces.</p>
                     <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
@@ -65,7 +76,15 @@
                     <div class="blurBg"></div>
                     <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
                     <h2>Logo Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores quas voluptatibus ipsa unde. Esse, laudantium?</p>
+                    <p>Creating unique and memorable logos that effectively represent your brand's identity and leave a lasting impression.</p>
+                    <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="glide__slide service">
+                    <div class="blurBg"></div>
+                    <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h2>SEO and Digital Marketing Design</h2>
+                    <p>Optimizing web designs and graphics for search engines and incorporating marketing elements into the design.</p>
                     <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
@@ -80,11 +99,139 @@
 
         <table>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td rowspan="2" class="cell-lg">
+                    <h2 class="value">05</h2>
+                    <p class="description">Years Experience</p>
+                </td>
+                <td>
+                    <h2 class="value">12</h2>
+                    <p class="description">Clients</p>
+                </td>
+                <td>
+                    <h2 class="value">05+</h2>
+                    <p class="description">Years Experience</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 class="value">20+</h2>
+                    <p class="description">Completed Projects</p>
+                </td>
+                <td>
+                    <h2 class="value">08</h2>
+                    <p class="description">Achievements</p>
+                </td>
             </tr>
         </table>
+
+        <div id="languages">
+            <h2>My Development Tools</h2>
+            <ul class="langs">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-square-js"></i></li>
+                <li><i class="fa-brands fa-sass"></i></li>
+                <li><i class="fa-brands fa-python"></i></li>
+                <li><i class="fa-brands fa-angular"></i></li>
+                <li><i class="fa-brands fa-react"></i></li>
+                <li><i class="fa-brands fa-git-alt"></i></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projectSect">
+        <h1>Projects I have worked on!</h1>
+        <div class="projects">
+            <div class="project">
+                <div class="cover"><img src="" alt="Project cover"></div>
+                <div class="details">
+                    <div class="header">
+                        <h1><a href="#">Monterey</a></h1>
+                        <span class="status">Incomplete</span>
+                    </div>
+
+                    <p class="desc">My personal portfolio inspired by macOs Monterey UI.</p>
+
+                    <div class="metadata">
+                        <span class="gitstars"><i class="fa-regular fa-star"></i>5 Stars</span>
+                        <ul class="usedTech">
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="cover"><img src="" alt="Project cover"></div>
+                <div class="details">
+                    <div class="header">
+                        <h1><a href="#">World Remedies</a></h1>
+                        <span class="status">Running</span>
+                    </div>
+
+                    <p class="desc">Collaborated on a website for a bee sting apitherapy company based in Malindi, Kenya.</p>
+                    
+                    <div class="metadata">
+                        <span class="gitstars"><i class="fa-regular fa-star"></i>8 Stars</span>
+                        <ul class="usedTech">
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                            <li><i class="fa-brands fa-python"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="cover"><img src="" alt="Project cover"></div>
+                <div class="details">
+                    <div class="header">
+                        <h1><a href="#">NaiFits</a></h1>
+                        <span class="status">Incomplete</span>
+                    </div>
+
+                    <p class="desc">A concept e-commerce website for an online clothing line selling second hand apparel.</p>
+                    
+                    <div class="metadata">
+                        <span class="gitstars"><i class="fa-regular fa-star"></i>4 Stars</span>
+                        <ul class="usedTech">
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="cover"><img src="" alt="Project cover"></div>
+                <div class="details">
+                    <div class="header">
+                        <h1><a href="#">T.Art</a></h1>
+                        <span class="status">Incomplete</span>
+                    </div>
+
+                    <p class="desc">A concept website for a tattoo company. It has a rich user friendly interface.</p>
+                    
+                    <div class="metadata">
+                        <span class="gitstars"><i class="fa-regular fa-star"></i>1 Stars</span>
+                        <ul class="usedTech">
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-sass"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
