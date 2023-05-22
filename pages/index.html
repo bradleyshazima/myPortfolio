@@ -18,12 +18,22 @@
 </head>
 <body>
     <nav>
-        <ul class="navlinks">
+        <ul class="navlinks" id="navlinks">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+
+            <div class="socialLinks">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                </ul>
+            </div>        
         </ul>
+
+        <div id="menuBtn"><i class="fa-solid fa-bars"></i></div>
     </nav>
 
     <div class="socialLinks">
@@ -41,7 +51,7 @@
                 <span id="typed-text"></span>
                 <span class="cursor" id="cursor"></span>
             </h1>
-            <p>As a passionate and skilled web designer, I have honed my abilities in various aspects of the field. With expertise in full stack development, self-taught graphic design, and certification in UI/UX, I am dedicated to creating visually appealing and user-friendly websites. My portfolio showcases the culmination of my hard work, creativity, and commitment to delivering exceptional design solutions that leave a lasting impact. Let's collaborate and bring your digital vision to life!</p>
+            <p>As a passionate and skilled web designer, I have honed my abilities in various aspects of the field. With expertise in full stack development, self-taught graphic design, and certification in UI/UX, I am dedicated to creating visually appealing and user-friendly websites. Let's collaborate and bring your digital vision to life!</p>
             <button id="hero-btn">Let's Talk</button>
         </div>
         <div class="myAvatar">
@@ -60,16 +70,14 @@
                     <div class="blurBg"></div>
                     <div class="icon"><i class="fa-solid fa-pen-ruler"></i></div>
                     <h2>UI/UX Design</h2>
-                    <p>Crafting exceptional user interfaces and seamless experiences that captivate users, blending aesthetics with usability for optimal engagement and satisfaction.</p>
-                    <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
+                    <p>Passionate about crafting exceptional user interfaces and seamless experiences that captivate users, blending aesthetics with usability for optimal engagement and satisfaction.</p>
                 </div>
 
                 <div class="glide__slide service">
                     <div class="blurBg"></div>
                     <div class="icon"><i class="fa-solid fa-code"></i></div>
-                    <h2>Web Design</h2>
-                    <p>Designing captivating and functional websites tailored to your specific needs, delivering engaging user experiences and visually appealing interfaces.</p>
-                    <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>Frontend Development</h2>
+                    <p>Skilled in HTML, CSS, JavaScript and React for designing captivating and functional websites tailored to your specific needs, delivering engaging user experiences and visually appealing interfaces.</p>
                 </div>
 
                 <div class="glide__slide service">
@@ -77,7 +85,6 @@
                     <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
                     <h2>Logo Design</h2>
                     <p>Creating unique and memorable logos that effectively represent your brand's identity and leave a lasting impression.</p>
-                    <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
                 <div class="glide__slide service">
@@ -85,7 +92,6 @@
                     <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
                     <h2>SEO and Digital Marketing Design</h2>
                     <p>Optimizing web designs and graphics for search engines and incorporating marketing elements into the design.</p>
-                    <a href="#">LEARN MORE<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
               </div>
@@ -135,6 +141,7 @@
                 <li><i class="fa-brands fa-angular"></i></li>
                 <li><i class="fa-brands fa-react"></i></li>
                 <li><i class="fa-brands fa-git-alt"></i></li>
+                <li><i class="fa-brands fa-bootstrap"></i></li>
             </ul>
         </div>
     </section>
@@ -227,15 +234,48 @@
                     </div>
                 </div>
             </div>
+
+            <div class="project">
+                <div class="cover"><img src="" alt="Project cover"></div>
+                <div class="details">
+                    <div class="header">
+                        <h1><a href="#">Resume</a></h1>
+                        <span class="status">Up to date</span>
+                    </div>
+
+                    <p class="desc">My curriculum vitae on web to showcase my experience and expertise.</p>
+                    
+                    <div class="metadata">
+                        <span class="gitstars"><i class="fa-regular fa-star"></i>1 Stars</span>
+                        <ul class="usedTech">
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-sass"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-
+        <div class="contactInfo">
+            <h2>Let's work together on your next project</h2>
+            <div class="mail">
+                <p>Email me at</p>
+                <div class="mailaddress"><a href="mailto:bradleyshazima@gmail.com">bradleyshazima@gmail.com</a></div>
+            </div>
+        </div>
     </section>
+
+    <footer>
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="/scripts/glider.js"></script>
     <script src="/scripts/typewriter.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
