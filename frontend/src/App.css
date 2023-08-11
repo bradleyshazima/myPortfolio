@@ -1,0 +1,53 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+    --dark-green: #122021;
+    --button-color: #3F6F71;
+    --link-color: #B7BBAF;
+    --green-txt: #1C4442;
+    --dark-green-txt: #1D5155;
+    --txt-color: #F0FEFF;
+    --white: #FFFFFF;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Avenir', sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: radial-gradient(107.86% 107.86% at 64.17% 37.06%, #042F2E 0%, rgb(2, 35, 35) 25.37%, #000000 61.79%);
+    background-attachment: fixed;
+}
+
+.trans-div {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+}
+
+.border {
+    border: 1.5px solid rgba(197, 255, 255, 0.12);
+}
+
+.b-border {
+    border-bottom: 1.5px solid rgba(197, 255, 255, 0.12);  
+}
+  
