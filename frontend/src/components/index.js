@@ -3,7 +3,6 @@ import Contact from './Contact';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import Projects from './Projects';
-import Stats from './Stats';
 import Tools from './Tools';
 
 export {  
@@ -12,6 +11,5 @@ export {
     Hero,
     Navbar,
     Projects,
-    Stats,
     Tools,
 }
