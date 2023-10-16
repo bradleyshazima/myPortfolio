@@ -22,18 +22,22 @@ export const navLinks = [
 
 export const services = [
     {
+        icon: "Desktop",
         title: "UI/UX Design",
         text: "Passionate about crafting exceptional user interfaces and seamless experiences that captivate users, blending aesthetics with usability for optimal engagement and satisfaction.",
     },
     {
+        icon: "Code-bracket",
         title: "Frontend Development",
         text: "Skilled in HTML, CSS, JavaScript and React for designing captivating and functional websites tailored to your specific needs, delivering engaging user experiences and visually appealing interfaces.",
     },
     {
+        icon: "Arrow-rays",
         title: "Logo Design",
         text: "Creating unique and memorable logos that effectively represent your brand's identity and leave a lasting impression.",
     },
     {
+        icon: "Magnifying-glass",
         title: "SEO and Digital Marketing Design",
         text: "Optimizing web designs and graphics for search engines and incorporating marketing elements into the design.",
     },

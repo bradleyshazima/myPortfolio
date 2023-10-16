@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Avatar } from '../assets'
 
+import Typewriter from '../javascript/typewriter.js'
+
 const Hero = () => {
+  useEffect(() => {
+    const typewriter = new Typewriter(document.getElementById("typed-text"), ['Full Stack Web Developer', 'Certified Graphic Designer', 'Self Taught UI/UX Designer']);
+    typewriter.start();
+  }, []);
+
   return (
     <>
     <section className='h-[100vh] w-full mt-20 px-40 flex overflow-hidden justify-between'>
