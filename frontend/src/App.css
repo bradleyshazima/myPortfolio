@@ -185,3 +185,15 @@ body {
       opacity: 1;
     }
   }
+
+
+  /* ------------------------  SWIPER NAVIGATION BUTTONS -------------------------------- */
+.swiper-nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+  margin: 1rem;
+}

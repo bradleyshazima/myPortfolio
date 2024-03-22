@@ -12,6 +12,7 @@ import { styles } from '../styles';
 
 // Hero Icons library
 import { CodeBracketSquareIcon, CursorArrowRaysIcon, MagnifyingGlassCircleIcon, ComputerDesktopIcon } from '@heroicons/react/24/solid'
+import { MdOutlineChevronRight, MdOutlineChevronLeft } from "react-icons/md";
 
 import Tilt from 'react-parallax-tilt';
 
@@ -22,12 +23,24 @@ const About = () => {
         <h1 className='w-full text-[56px] font-bold montserrat'>What I do best!</h1>
         <p className='w-full font-normal text-2xl montserrat'>Here are the services I offer</p>
 
+        <div className='flex w-fit self-end'>
+            <div className="custom-prev-button swiper-nav-btn backdrop-blur f-border addshadow" onClick={() => handlePrevClick()}>
+                <MdOutlineChevronLeft className='text-4xl mr-[2px] ' />
+            </div>
+            <div className="custom-next-button swiper-nav-btn backdrop-blur f-border addshadow" onClick={() => handleNextClick()}>
+                <MdOutlineChevronRight className='text-4xl ml-[2px]' />
+            </div>
+        </div>
+
         <Swiper
             slidesPerView={3}
             spaceBetween={30}
-            loop={true}
-            navigation={true}
+            loop={false}
             modules={[Navigation]}
+            navigation={{
+                prevEl: '.custom-prev-button',
+                nextEl: '.custom-next-button'
+              }}
             className="mySwiper h-[30rem] w-full"
         >
           {services.map((service, index) => (
@@ -45,6 +58,7 @@ const About = () => {
                 </SwiperSlide>
             ))}
         </Swiper>
+
 
         <div className="stats flex items-center justify-center w-full h-[420px] gap-4">
             <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} className='w-2/5 h-full'>
