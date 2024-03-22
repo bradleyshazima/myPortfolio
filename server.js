@@ -7,7 +7,9 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 // Serve static files from the frontend folder
-app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
+app.use(express.static(path.join(__dirname, 'frontend', 'dist'), {
+    type: 'application/javascript'
+}));
 
 // Route all requests to index.html for client-side routing
 app.get('*', (req, res) => {
