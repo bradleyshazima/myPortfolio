@@ -38,7 +38,7 @@ html {
 }
 
 body {
-    background: radial-gradient(107.86% 107.86% at 64.17% 37.06%, #042F2E 0%, rgb(2, 35, 35) 25.37%, #000000 61.79%);
+    background: radial-gradient(107.86% 107.86% at 64.17% 37.06%, #042F2E 0%, rgb(2, 35, 35) 25.37%, #000000 61.79%), url('./assets/abstract.png');
     background-attachment: fixed;
     color: var(--txt-color);
     min-width: 100vw;
@@ -61,10 +61,19 @@ body {
   border-top: 1.5px solid rgba(197, 255, 255, 0.12);  
 }
 
+.l-border {
+  border-left: 1.5px solid rgba(197, 255, 255, 0.12);  
+}
+
 
 /* -------------------- Colors --------------------------- */
 .darkgreen {
     background-color: var(--dark-green);
+}
+
+.green {
+  background-color: rgba(28, 68, 66, 0.3);
+
 }
 
 .txtdarkgreen {
@@ -85,6 +94,10 @@ body {
 
 .txtgreen {
     color: var(--green-txt);
+}
+
+.bg-white {
+  background-color: var(--white);
 }
 
 
@@ -195,10 +208,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 48px;
-  width: 48px;
   border-radius: 16%;
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -209,3 +220,4 @@ body {
   transition-property: transform;
   transition-duration: 200ms;
 }
+

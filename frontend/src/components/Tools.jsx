@@ -11,9 +11,9 @@ import Tilt from 'react-parallax-tilt';
 
 const Tools = () => {
   return (
-    <div className='w-full flex flex-col items-center mt-32'>
-      <h2 className='text-3xl font-semibold'>My Development Tools</h2>
-      <ul className='flex items-center justify-center mt-16 flex-wrap'>
+    <div className='w-full flex flex-col items-center mt-32 p-4 lg:p-12'>
+      <h2 className='lg:text-3xl text-xl montserrat lg:font-semibold font-normal text-center lg:text-left'>Check out my development tools</h2>
+      <ul className='flex items-center justify-center lg:mt-16 mt-4 flex-wrap'>
           <li className={`${styles.devTool}`}><AiFillHtml5 /></li>
           <li className={`${styles.devTool}`}><FaCss3Alt /></li>
           <li className={`${styles.devTool}`}><BiLogoJavascript /></li>

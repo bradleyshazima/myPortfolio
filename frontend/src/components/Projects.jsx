@@ -13,7 +13,7 @@ const Projects = () => {
 
             {projects.map((project, index) => (
                 <div className="w-[48%] h-[200px] bg-[#3f6f7133] rounded-lg f-border my-5 overflow-hidden addshadow" key={index}>
-                    <div>{project.title}</div>
+                    <div className='w-full bg-slate-400 h-12'>{project.title}</div>
                 </div>
             ))}
 

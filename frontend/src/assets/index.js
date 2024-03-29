@@ -1,4 +1,5 @@
 import Avatar from './myAvatar.png';
+import Pattern from './abstract.png'
 
 import Service from './jsx/Service';
 
@@ -11,6 +12,7 @@ import Project5 from '../assets/project5.jpg'
 
 export {
     Avatar,
+    Pattern,
 
     Service,
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <section className="mt-32 px-16 py-20 t-border flex backdrop-blur-lg trans-div">
+    <section className="mt-32 px-16 py-20 t-border flex backdrop-blur-lg trans-div overflow-x-hidden">
       <div className="w-full flex">
         <div className="flex flex-col justify-between mb-10 w-full shrink-0 md:mb-0 md:w-1/2 md:px-3 lg:px-6">
           <div>

@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top navbar */}
-      <nav className='sm:px-4 lg:px-12 b-border trans-div w-full h-10 flex lg:justify-center items-center sm:justify-end bg-opacity-50 backdrop-blur-lg fixed top-0 left-0 z-50 lg:h-16'>
+      <nav className='sm:px-4 lg:px-12 b-border trans-div w-full flex lg:justify-center justify-end items-center bg-opacity-50 backdrop-blur-lg fixed top-0 left-0 z-50 h-16 '>
         <div className="flex justify-center items-center gap-4 md:gap-8">
           {/* Hamburger menu button for small screens */}
           <button
@@ -32,7 +32,7 @@ const Navbar = () => {
           <ul className={`hidden lg:flex items-center gap-4 lg:gap-8`}>
             {navLinks.map((link, index) => (
               <li key={index} className="lg:text-base">
-                <a className='text-white' href={link.link} onClick={handleLinkClick}>{link.title}</a>
+                <a className='text-white montserrat' href={link.link} onClick={handleLinkClick}>{link.title}</a>
               </li>
             ))}
           </ul>
@@ -40,14 +40,14 @@ const Navbar = () => {
       </nav>
 
       {/* Side menu */}
-      <div className={`z-50 fixed top-0 right-0 h-full w-64 bg-white transform transition-transform duration-200 ease-in-out ${isSideMenuOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden`}>
+      <div className={`z-50 fixed top-0 right-0 h-full w-64 green  backdrop-blur-lg transform transition-transform duration-200 ease-in-out ${isSideMenuOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden rounded-l-lg l-border`}>
         <button className="absolute top-4 right-4" onClick={toggleSideMenu}>
-          <FiX className="text-black" size={24} />
+          <FiX size={24} />
         </button>
         <ul className="flex flex-col items-center gap-4 p-4">
           {navLinks.map((link, index) => (
             <li key={index} className="text-lg">
-              <a className='text-black' href={link.link} onClick={handleLinkClick}>{link.title}</a>
+              <a className='montserrat' href={link.link} onClick={handleLinkClick}>{link.title}</a>
             </li>
           ))}
         </ul>
