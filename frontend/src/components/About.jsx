@@ -15,16 +15,15 @@ import Tilt from 'react-parallax-tilt';
 
 const About = () => {
   return (
-    <section id="about" className='w-full overflow-x-hidden py-10 px-4 sm:px-8 md:px-12 lg:px-20 flex flex-col items-center relative'>
-      <div className='h-full w-1/2 bg-[#01171733] backdrop-blur-2xl absolute -z-2 top-0 left-0 rounded-[80px] f-border border-l-0 border-b-0'></div>
-      <h1 className='w-full text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold montserrat text-center'>What I do best!</h1>
-      <p className='w-full font-normal text-lg sm:text-xl md:text-2xl montserrat text-center'>Here are the services I offer</p>
+    <section id="about" className='w-full py-10 px-4 sm:px-8 md:px-12 lg:px-20 flex flex-col items-center relative mt-16'>
+      <h1 className='w-full text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold montserrat text-center'>Guess what!</h1>
+      <p className='w-full font-normal text-lg sm:text-xl md:text-xl montserrat text-center'>Here's what I do best'</p>
 
-      <div className='flex w-full justify-center items-center mt-4'>
-        <div className="custom-prev-button swiper-nav-btn backdrop-blur f-border addshadow">
+      <div className='flex w-full justify-end items-center'>
+        <div className="custom-prev-button swiper-nav-btn backdrop-blur f-border addshadow trans-div">
           <MdOutlineChevronLeft className='text-2xl sm:text-3xl lg:text-4xl mr-1 ' />
         </div>
-        <div className="custom-next-button swiper-nav-btn backdrop-blur f-border addshadow">
+        <div className="custom-next-button swiper-nav-btn backdrop-blur f-border addshadow trans-div">
           <MdOutlineChevronRight className='text-2xl sm:text-3xl lg:text-4xl ml-1' />
         </div>
       </div>
@@ -39,22 +38,37 @@ const About = () => {
           nextEl: '.custom-next-button'
         }}
         className="mySwiper h-[30rem] w-full"
+        breakpoints={{
+          480: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {services.map((service, index) => (
           <SwiperSlide key={index}>
-            <div className={`${styles.serviceCard} backdrop-blur addshadow flex flex-col items-center justify-center p-4`}>
+            <div className={`${styles.serviceCard} backdrop-blur addshadow`}>
               <div className="mb-4 txtbtncolor">
                 {service.icon === 'Desktop' && <ComputerDesktopIcon className='h-12 w-12' />}
                 {service.icon === 'Code-bracket' && <CodeBracketSquareIcon className='h-12 w-12' />}
                 {service.icon === 'Arrow-rays' && <CursorArrowRaysIcon className='h-12 w-12' />}
                 {service.icon === 'Magnifying-glass' && <MagnifyingGlassCircleIcon className='h-12 w-12' />}
               </div>
-              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold poppins mb-3 h-20 w-full text-center'>{service.title}</h2>
+              <h2 className='text-2xl sm:text-3xl lg:text-3xl font-bold poppins mb-3 h-20 w-full'>{service.title}</h2>
               <p className='montserrat font-normal text-base'>{service.text}</p>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <div>
+        <h3></h3>
+      </div>
 
       <div className="stats flex flex-col md:flex-row items-center justify-center w-full h-auto md:h-[420px] gap-4 mt-12">
         <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} className='w-full md:w-2/5 h-full'>

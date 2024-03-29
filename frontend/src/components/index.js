@@ -4,7 +4,6 @@ import Hero from './Hero';
 import Navbar from './Navbar';
 import Projects from './Projects';
 import Tools from './Tools';
-import Footer from './Footer';
 
 export {  
     About,
@@ -13,5 +12,4 @@ export {
     Navbar,
     Projects,
     Tools,
-    Footer,
 }

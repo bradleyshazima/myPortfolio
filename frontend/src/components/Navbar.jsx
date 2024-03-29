@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top navbar */}
-      <nav className='sm:px-4 lg:px-12 b-border trans-div w-full h-16 flex lg:justify-center items-center sm:justify-end bg-opacity-50 backdrop-blur-lg fixed top-0 left-0 z-50 lg:h-20'>
+      <nav className='sm:px-4 lg:px-12 b-border trans-div w-full h-10 flex lg:justify-center items-center sm:justify-end bg-opacity-50 backdrop-blur-lg fixed top-0 left-0 z-50 lg:h-16'>
         <div className="flex justify-center items-center gap-4 md:gap-8">
           {/* Hamburger menu button for small screens */}
           <button
@@ -31,7 +31,7 @@ const Navbar = () => {
           {/* Navlinks (only shown on larger screens) */}
           <ul className={`hidden lg:flex items-center gap-4 lg:gap-8`}>
             {navLinks.map((link, index) => (
-              <li key={index} className="lg:text-lg">
+              <li key={index} className="lg:text-base">
                 <a className='text-white' href={link.link} onClick={handleLinkClick}>{link.title}</a>
               </li>
             ))}
